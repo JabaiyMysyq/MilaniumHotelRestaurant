@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой сайт</title>
+  <title>Меню ресторана</title>
   <style>
     body {
       margin: 0;
@@ -15,20 +15,63 @@
       gap: 30px;
       font-family: sans-serif;
     }
+    
     img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
+
+    /* Стили для блока контактов */
+    .contact-card {
+      background-color: #ffffff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .contact-card p {
+      margin: 0 0 15px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* Стили для кнопки WhatsApp */
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366; /* Фирменный цвет WhatsApp */
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Блок с контактами и ссылкой на WhatsApp -->
+  <div class="contact-card">
+    <p>Ресторан: <strong>+7 (705) 777-08-16</strong></p>
+    <!-- Ссылка wa.me использует номер в международном формате (через 7 вместо 8) -->
+    <a href="https://wa.me/77057770816" class="whatsapp-btn" target="_blank">Написать в WhatsApp</a>
+  </div>
+
   <!-- Файлы из вашего репозитория -->
-  <img src="WhatsApp Image 2026-07-30 at 06.20.58.jpeg" alt="Страница 1">
-  <img src="WhatsApp Image 2026-07-30 at 06.20.59.jpeg" alt="Страница 2">
-  <img src="WhatsApp Image 2026-07-30 at 06.20.59 (1).jpeg" alt="Страница 3">
+  <img src="pic1.jpg" alt="Страница 1">
+  <img src="pic2.jpg" alt="Страница 2">
+  <img src="pic3.jpg" alt="Страница 3">
+  <img src="pic4.jpg" alt="Страница 4">
 
 </body>
 </html>
